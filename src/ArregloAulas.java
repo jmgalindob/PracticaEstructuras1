@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
  */
 public class ArregloAulas
 {
-   public ArrayList<Aulas> aula = new ArrayList<Aulas>();
+   public LinkedList<Aulas> aula = new LinkedList<Aulas>();
     
    public void leerAulas()
    {
