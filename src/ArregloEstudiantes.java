@@ -10,7 +10,8 @@ import java.io.FileNotFoundException;
  */
 public class ArregloEstudiantes
 {
-   public ArrayList<Estudiantes> est = new ArrayList<Estudiantes>();
+   
+   public LinkedList<Estudiantes> est = new LinkedList<Estudiantes>();
    
    public void leerEstudiantes()
    {
