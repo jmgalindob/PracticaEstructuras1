@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
  */
 public class ArregloPa20192
 {
-   public ArrayList<pa20192> pa = new ArrayList<pa20192>();
+   public LinkedList<pa20192> pa = new LinkedList<pa20192>();
    
    public void leerpa()
    {
