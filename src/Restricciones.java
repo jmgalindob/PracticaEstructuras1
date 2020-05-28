@@ -30,10 +30,13 @@ public class Restricciones
             System.out.println(o);
             for(int j = 1; j < tpa ; i++)
             {
-                
+                   //if(planAcademico.get(i).getProfesor() == planAcademico.get(i).getProfesor())
+                   //{
                     c++; 
                     System.out.println(c);
-            }
+                   //}
+            
+             }
             
         }
         
