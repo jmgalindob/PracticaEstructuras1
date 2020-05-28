@@ -4,7 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 public class ArregloMaterias
 {
-   public ArrayList<mat20192> mat = new ArrayList<>();
+   
+   public LinkedList<mat20192> mat = new LinkedList<>();
    
    public void leerMaterias()
    {
