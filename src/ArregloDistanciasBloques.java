@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
  */
 public class ArregloDistanciasBloques extends QuickSort
 {
-   public ArrayList<DistanciasBloques> distblo = new ArrayList<>();
+   public LinkedList<DistanciasBloques> distblo = new LinkedList<>();
    
    public void leerDistancias()
    {
