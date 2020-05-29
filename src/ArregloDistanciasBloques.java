@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ArregloDistanciasBloques extends QuickSort
+public class ArregloDistanciasBloques 
 {
    public LinkedList<DistanciasBloques> distblo = new LinkedList<>();
    

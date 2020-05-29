@@ -22,7 +22,20 @@ public class Restricciones
         planAcademico = refPa.pa;
         
         int tpa = planAcademico.size();
-        
+        int c = 0;
+        int o = 0;
+        for(int i = 0; i < tpa ; i++)
+        {
+            o++;
+            System.out.println(o);
+            for(int j = 1; j < tpa ; i++)
+            {
+                
+                    c++; 
+                    System.out.println(c);
+            }
+            
+        }
         
         
     }

@@ -1,11 +1,10 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 public class ArregloMaterias
 {
-   
-   public LinkedList<mat20192> mat = new LinkedList<mat20192>();
+   public LinkedList<mat20192> mat = new LinkedList<>();
    
    public void leerMaterias()
    {

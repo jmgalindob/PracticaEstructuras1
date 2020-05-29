@@ -20,6 +20,7 @@ public class ArregloPa20192
            
            int tamaño = 3302;
            int count = 0;
+           int c = 0;
            for(int i = 0; i < tamaño; i++)
            {
                String linea = scan.nextLine();
@@ -44,15 +45,29 @@ public class ArregloPa20192
                
                
            }
-           
+           /**
            for(int i = 0; i < tamaño; i++)
            {
-               if(pa.get(i).getAula() ==0)
+               if(pa.get(i).getProfesor() != 1)
                {
-                  count++;
+                   count++;
+                 
                }
             }
-            System.out.println(count);
+            System.out.println(" Existen: " + count + "    Sin profesor asignado");
+          
+            for(int i = 0; i < tamaño; i++)
+           {
+               if(pa.get(i).getProfesor() == 1)
+               {
+                   c++;
+                 
+               }
+            }
+            
+            
+            System.out.println(" Existen: " + c + " Sin aula asignada");
+            **/
            }catch (FileNotFoundException e) {
             System.out.println("¡El Archibo no existe!");
            }
