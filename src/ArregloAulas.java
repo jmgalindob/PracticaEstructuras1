@@ -16,10 +16,10 @@ public class ArregloAulas
    public void leerAulas()
    {
        try{
-           File p = new File("aulas.csv");
+           File p = new File("aulasCorto.csv");
            Scanner scan = new Scanner(p);
            
-           int t= 385;
+           int t= 19;
            for( int i = 0; i < t; i++)
            {
                String linea = scan.nextLine();

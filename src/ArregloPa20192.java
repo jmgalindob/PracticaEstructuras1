@@ -1,5 +1,5 @@
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 /**
@@ -15,10 +15,10 @@ public class ArregloPa20192
    public void leerpa()
    {
        try {
-           File p = new File ("pa20192.csv");
+           File p = new File ("pa20192Corto.csv");
            Scanner scan = new Scanner(p);
            
-           int tamaño = 3302;
+           int tamaño = 21;
            int count = 0;
            int c = 0;
            for(int i = 0; i < tamaño; i++)
@@ -45,15 +45,13 @@ public class ArregloPa20192
                
                
            }
-           /**
+            /**
            for(int i = 0; i < tamaño; i++)
            {
-               if(pa.get(i).getProfesor() != 1)
-               {
-                   count++;
-                 
-               }
+               System.out.println(pa.get(i));
+               
             }
+           
             System.out.println(" Existen: " + count + "    Sin profesor asignado");
           
             for(int i = 0; i < tamaño; i++)
@@ -61,7 +59,7 @@ public class ArregloPa20192
                if(pa.get(i).getProfesor() == 1)
                {
                    c++;
-                 
+                // System.out.println(Collections.sort(pa.get(i).getProfesor()));
                }
             }
             

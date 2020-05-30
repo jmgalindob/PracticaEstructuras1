@@ -15,10 +15,10 @@ public class ArregloDistanciasBloques
    public void leerDistancias()
    {
        try{
-           File p = new File("DistanciasBloques.csv");
+           File p = new File("DistanciasBloquesCorto.csv");
            Scanner scan = new Scanner(p);
            
-           int t = 171;
+           int t = 20;
            int c = 0;
            for(int i = 0; i < t; i++)
            {

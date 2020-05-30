@@ -15,15 +15,17 @@ public class ArregloEstudiantes
    public void leerEstudiantes()
    {
        try{
-           File p = new File("estudiantes.csv");
+           File p = new File("estudiantesCorto.csv");
            Scanner scan = new Scanner(p);
            
-           int tamaña = 12222;
+           int tamaña = 20;
            int c =0;
            for(int i = 0; i < tamaña; i++)
            {
                String linea = scan.nextLine();
                String [] separado = linea.split(",");
+               System.out.println(linea);
+               
                int codigo = Integer.parseInt(separado[0]);
                int disEstudiante = Integer.parseInt(separado[1]);
                Estudiantes aux = new Estudiantes(codigo, disEstudiante);
@@ -36,9 +38,10 @@ public class ArregloEstudiantes
                if(est.get(i).condicion() == 1)
                {
                   c++;
+                 // System.out.println(est.get(i));
                 }
             }
-            System.out.println(c);
+            
           } catch (FileNotFoundException e) {
             System.out.println("¡El Archibo no existe!");
            }

@@ -6,7 +6,7 @@ import java.util.LinkedList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Restricciones
+public class Restricciones1
 {
     LinkedList<Estudiantes> estudiante;
     LinkedList<pa20192>  planAcademico;
@@ -24,26 +24,27 @@ public class Restricciones
         int tpa = planAcademico.size();
         int c = 0;
         int o = 0;
-        int i = 0;
-        int j = 1;
+        
+        
         
         String iguales = null;
-        while(i < tpa -1)
+        String m = null;
+        for(int i =0;i < tpa -1;i++)
         {
-            while(j < tpa)
-            {
-                 if(planAcademico.get(i).getProfesor() == 1 && planAcademico.get(i).getProfesor() != planAcademico.get(j).getProfesor())
+            
+                 if(planAcademico.get(i).getProfesor() == 1 && planAcademico.get(i).getProfesor() != planAcademico.get(i+1).getProfesor())
                 {
+                    for(int j = 1;j < tpa;j++)
+                    {   
                     if(planAcademico.get(i).getDia().compareTo(planAcademico.get(j).getDia()) == 1)
                     {
                     c++;
                     iguales = planAcademico.get(j).getMateria();
-                    System.out.println(iguales);
+                    m= planAcademico.get(j).getDia();
+                    System.out.println(iguales + "   " + m);
                     }
                 }
-                j++;
             }
-            i++;
         }
         System.out.println(c);
         
