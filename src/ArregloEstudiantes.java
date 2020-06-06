@@ -3,15 +3,23 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 /**
- * Write a description of class ArregloEstudiantes here.
+ * Esta clase permite la lectura de un archivo .csv llamado estudiantesCorto.csv.
+ * Este archivo es un archivo recordado del archivo orginal llamado estudiantes.csv.
+ * Este recorte se efectuó para permitir una prueba del buen funcionamiento del código.
+ * Al efectuar a lectura de dicho archivo, la clase crea una LinkedList de Estudiantes 
+ * que contiene todos los estudiantes entrados con sus respectivos códigos y discapacidades
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jose Miguel Galindo Barco 
+ * @version 26/05/2020
  */
 public class ArregloEstudiantes
 {
    public LinkedList<Estudiantes> est = new LinkedList<Estudiantes>();
    
+   /**
+    * Método que permite la lectura del archivo estudiantesCorto.csv, crea 
+    * una LinkedList de Estudiantes y lo llena con los elementos leidos.
+    */
    public void leerEstudiantes()
    {
        try{

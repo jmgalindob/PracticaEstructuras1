@@ -1,17 +1,25 @@
-import java.util.*;
-
+import java.util.LinkedList;
+import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 /**
- * Write a description of class ArregloPa20192 here.
+ * Esta clase permite la lectura de un archivo .csv llamado pa20192Corto.csv.
+ * Este archivo es un archivo recordado del archivo orginal llamado pa20192.csv.
+ * Este recorte se efectuó para permitir una prueba del buen funcionamiento del código.
+ * Al efectuar a lectura de dicho archivo, la clase crea una LinkedList de pa20192 
+ * que contiene datos correspondientes al plan academico del segundo semestre del 2019.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jose Miguel Galindo y Santiago Ospina
+ * @version 02/06/202
  */
 public class ArregloPa20192
 {
    public LinkedList<pa20192> pa = new LinkedList<pa20192>();
    
+   /**
+    * Método que permite la lectura del archivo pa20192Corto.csv, crea 
+    * una LinkedList de pa20192 y lo llena con los elementos leidos.
+    */
    public void leerpa()
    {
        try {
@@ -45,29 +53,10 @@ public class ArregloPa20192
                
                
            }
-            /**
-           for(int i = 0; i < tamaño; i++)
-           {
-               System.out.println(pa.get(i));
-               
-            }
            
-            System.out.println(" Existen: " + count + "    Sin profesor asignado");
-          
-            for(int i = 0; i < tamaño; i++)
-           {
-               if(pa.get(i).getProfesor() == 1)
-               {
-                   c++;
-                // System.out.println(Collections.sort(pa.get(i).getProfesor()));
-               }
-            }
-            
-            
-            System.out.println(" Existen: " + c + " Sin aula asignada");
-            **/
            }catch (FileNotFoundException e) {
             System.out.println("¡El Archibo no existe!");
            }
    }
+   
 }

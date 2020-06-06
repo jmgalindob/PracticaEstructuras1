@@ -4,15 +4,24 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
- * Write a description of class ArregloAulas here.
+ * Esta clase permite la lectura de un archivo .csv llamado AulasCorto.csv.
+ * Este archivo es un archivo recordado del archivo orginal llamado Aulas.csv.
+ * Este recorte se efectuó para permitir una prueba del buen funcionamiento del código.
+ * Al efectuar a lectura de dicho archivo, la clase crea una LinkedList de Aulas 
+ * que contiene datos correspondientes a las diferentes aulas de la universidad con sus
+ * respectivas caracteristicas, tales como: codigo, tipo de aula, capadidad y acceso.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jose Miguel Galindo y Santiago Ospina
+ * @version 02/06/202
  */
 public class ArregloAulas
 {
    public LinkedList<Aulas> aula = new LinkedList<Aulas>();
     
+   /**
+    * Método que permite la lectura del archivo AulasCorto.csv, crea 
+    * una LinkedList de Aulas y lo llena con los elementos leidos.
+    */
    public void leerAulas()
    {
        try{
