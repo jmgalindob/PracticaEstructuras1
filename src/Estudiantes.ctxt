@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=numero\ dis
-comment0.target=Estudiantes(int,\ int)
-comment1.params=
-comment1.target=int\ codigoEstudiante()
-comment2.params=
-comment2.target=int\ condicion()
-numComments=3
